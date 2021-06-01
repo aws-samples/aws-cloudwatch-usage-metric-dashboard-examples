@@ -1,0 +1,310 @@
+{
+    "widgets": [
+        {
+            "type": "metric",
+            "x": 6,
+            "y": 4,
+            "width": 6,
+            "height": 6,
+            "properties": {
+                "metrics": [
+                    [ { "expression": "SERVICE_QUOTA(m1)", "label": "Service Limit Quota", "id": "e1", "region": "us-east-1" } ],
+                    [ "AWS/Usage", "CallCount", "Type", "API", "Resource", "GetMetricData", "Service", "CloudWatch", "Class", "None", { "id": "m1" } ]
+                ],
+                "view": "timeSeries",
+                "stacked": false,
+                "region": "us-east-1",
+                "stat": "Sum",
+                "period": 60,
+                "title": "GetMetricData Usage vs. Quota",
+                "yAxis": {
+                    "right": {
+                        "label": "",
+                        "showUnits": true
+                    },
+                    "left": {
+                        "showUnits": false,
+                        "label": "API Calls",
+                        "min": 0
+                    }
+                }
+            }
+        },
+        {
+            "type": "metric",
+            "x": 12,
+            "y": 4,
+            "width": 6,
+            "height": 6,
+            "properties": {
+                "metrics": [
+                    [ { "expression": "SERVICE_QUOTA(m1)", "label": "Service Limit Quota", "id": "e1", "region": "us-east-1" } ],
+                    [ "AWS/Usage", "CallCount", "Type", "API", "Resource", "GetMetricStatistics", "Service", "CloudWatch", "Class", "None", { "id": "m1", "yAxis": "left" } ]
+                ],
+                "view": "timeSeries",
+                "stacked": false,
+                "region": "us-east-1",
+                "stat": "Sum",
+                "period": 60,
+                "title": "GetMetricsStatistics Usage vs. Quota",
+                "yAxis": {
+                    "left": {
+                        "label": "API Calls",
+                        "showUnits": false,
+                        "min": 0
+                    }
+                }
+            }
+        },
+        {
+            "type": "metric",
+            "x": 0,
+            "y": 4,
+            "width": 6,
+            "height": 6,
+            "properties": {
+                "metrics": [
+                    [ { "expression": "SERVICE_QUOTA(m1)", "label": "Service Limit Quota", "id": "e1", "region": "us-east-1" } ],
+                    [ "AWS/Usage", "CallCount", "Type", "API", "Resource", "ListMetrics", "Service", "CloudWatch", "Class", "None", { "id": "m1" } ]
+                ],
+                "view": "timeSeries",
+                "stacked": false,
+                "region": "us-east-1",
+                "stat": "Sum",
+                "period": 60,
+                "title": "ListMetrics Usage vs. Quota",
+                "yAxis": {
+                    "right": {
+                        "label": "",
+                        "showUnits": true
+                    },
+                    "left": {
+                        "showUnits": false,
+                        "label": "API Calls",
+                        "min": 0
+                    }
+                }
+            }
+        },
+        {
+            "type": "metric",
+            "x": 18,
+            "y": 4,
+            "width": 6,
+            "height": 6,
+            "properties": {
+                "metrics": [
+                    [ { "expression": "SERVICE_QUOTA(m1)", "label": "Service Limit Quota", "id": "e1", "region": "us-east-1" } ],
+                    [ "AWS/Usage", "CallCount", "Type", "API", "Resource", "PutMetricData", "Service", "CloudWatch", "Class", "None", { "id": "m1" } ]
+                ],
+                "view": "timeSeries",
+                "stacked": false,
+                "region": "us-east-1",
+                "stat": "Sum",
+                "period": 60,
+                "title": "PutMetricData Usage vs. Quota",
+                "yAxis": {
+                    "right": {
+                        "label": "",
+                        "showUnits": true
+                    },
+                    "left": {
+                        "showUnits": false,
+                        "label": "API Calls",
+                        "min": 0
+                    }
+                }
+            }
+        },
+        {
+            "type": "metric",
+            "x": 0,
+            "y": 11,
+            "width": 6,
+            "height": 6,
+            "properties": {
+                "metrics": [
+                    [ { "expression": "SERVICE_QUOTA(m1)", "label": "Service Limit Quota", "id": "e1", "region": "us-east-1" } ],
+                    [ "AWS/Usage", "CallCount", "Type", "API", "Resource", "GetDashboard", "Service", "CloudWatch", "Class", "None", { "id": "m1" } ]
+                ],
+                "view": "timeSeries",
+                "stacked": false,
+                "region": "us-east-1",
+                "stat": "Sum",
+                "period": 60,
+                "title": "GetDashboard Usage vs. Quota",
+                "yAxis": {
+                    "right": {
+                        "label": "",
+                        "showUnits": true
+                    },
+                    "left": {
+                        "showUnits": false,
+                        "label": "API Calls",
+                        "min": 0
+                    }
+                }
+            }
+        },
+        {
+            "type": "metric",
+            "x": 6,
+            "y": 11,
+            "width": 6,
+            "height": 6,
+            "properties": {
+                "metrics": [
+                    [ { "expression": "SERVICE_QUOTA(m1)", "label": "Service Limit Quota", "id": "e1", "region": "us-east-1" } ],
+                    [ "AWS/Usage", "CallCount", "Type", "API", "Resource", "PutDashboard", "Service", "CloudWatch", "Class", "None", { "id": "m1" } ]
+                ],
+                "view": "timeSeries",
+                "stacked": false,
+                "region": "us-east-1",
+                "stat": "Sum",
+                "period": 60,
+                "title": "PutDashboard Usage vs. Quota",
+                "yAxis": {
+                    "right": {
+                        "label": "",
+                        "showUnits": true
+                    },
+                    "left": {
+                        "showUnits": false,
+                        "label": "API Calls",
+                        "min": 0
+                    }
+                }
+            }
+        },
+        {
+            "type": "metric",
+            "x": 12,
+            "y": 11,
+            "width": 6,
+            "height": 6,
+            "properties": {
+                "metrics": [
+                    [ { "expression": "SERVICE_QUOTA(m1)", "label": "Service Limit Quota", "id": "e1", "region": "us-east-1" } ],
+                    [ "AWS/Usage", "CallCount", "Type", "API", "Resource", "DeleteDashboards", "Service", "CloudWatch", "Class", "None", { "id": "m1" } ]
+                ],
+                "view": "timeSeries",
+                "stacked": false,
+                "region": "us-east-1",
+                "stat": "Sum",
+                "period": 60,
+                "title": "DeleteDashboards Usage vs. Quota",
+                "yAxis": {
+                    "right": {
+                        "label": "",
+                        "showUnits": true
+                    },
+                    "left": {
+                        "showUnits": false,
+                        "label": "API Calls",
+                        "min": 0
+                    }
+                }
+            }
+        },
+        {
+            "type": "metric",
+            "x": 0,
+            "y": 18,
+            "width": 6,
+            "height": 6,
+            "properties": {
+                "metrics": [
+                    [ { "expression": "SERVICE_QUOTA(m1)", "label": "Service Limit Quota", "id": "e1", "region": "us-east-1" } ],
+                    [ "AWS/Usage", "CallCount", "Type", "API", "Resource", "DescribeAlarms", "Service", "CloudWatch", "Class", "None", { "id": "m1" } ]
+                ],
+                "view": "timeSeries",
+                "stacked": false,
+                "region": "us-east-1",
+                "stat": "Sum",
+                "period": 60,
+                "title": "DescribeAlarms Usage vs. Quota",
+                "yAxis": {
+                    "right": {
+                        "label": "",
+                        "showUnits": true
+                    },
+                    "left": {
+                        "showUnits": false,
+                        "label": "API Calls",
+                        "min": 0
+                    }
+                }
+            }
+        },
+        {
+            "type": "metric",
+            "x": 6,
+            "y": 18,
+            "width": 6,
+            "height": 6,
+            "properties": {
+                "metrics": [
+                    [ { "expression": "SERVICE_QUOTA(m1)", "label": "Service Limit Quota", "id": "e1", "region": "us-east-1" } ],
+                    [ "AWS/Usage", "CallCount", "Type", "API", "Resource", "DeleteAlarms", "Service", "CloudWatch", "Class", "None", { "id": "m1" } ]
+                ],
+                "view": "timeSeries",
+                "stacked": false,
+                "region": "us-east-1",
+                "stat": "Sum",
+                "period": 60,
+                "title": "DeleteAlarms Usage vs. Quota",
+                "yAxis": {
+                    "right": {
+                        "label": "",
+                        "showUnits": true
+                    },
+                    "left": {
+                        "showUnits": false,
+                        "label": "API Calls",
+                        "min": 0
+                    }
+                }
+            }
+        },
+        {
+            "type": "text",
+            "x": 0,
+            "y": 17,
+            "width": 24,
+            "height": 1,
+            "properties": {
+                "markdown": "\n## **CloudWatch Alarms Usage Metrics**\n"
+            }
+        },
+        {
+            "type": "text",
+            "x": 0,
+            "y": 3,
+            "width": 24,
+            "height": 1,
+            "properties": {
+                "markdown": "\n## **CloudWatch Metrics Usage Metrics**\n"
+            }
+        },
+        {
+            "type": "text",
+            "x": 0,
+            "y": 10,
+            "width": 24,
+            "height": 1,
+            "properties": {
+                "markdown": "\n## **CloudWatch Dashboard Usage Metrics**\n"
+            }
+        },
+        {
+            "type": "text",
+            "x": 0,
+            "y": 0,
+            "width": 24,
+            "height": 3,
+            "properties": {
+                "markdown": "\n# Usage Metrics vs. Quota\n## CloudWatch\nCloudWatch collects metrics that track the usage of some AWS resources. These metrics correspond to AWS service quotas.  Tracking these metrics can help you proactively manage your quotas.\n\n[button:CloudWatch](#dashboards:name=AWS-Usage-Metrics-CloudWatch) [button:DynamoDB](#dashboards:name=AWS-Usage-Metrics-DynamoDB) [button:EC2](#dashboards:name=AWS-Usage-Metrics-EC2)\n"
+            }
+        }
+    ]
+}

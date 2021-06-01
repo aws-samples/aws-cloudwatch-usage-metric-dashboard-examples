@@ -1,0 +1,74 @@
+{
+    "widgets": [
+        {
+            "type": "metric",
+            "x": 12,
+            "y": 4,
+            "width": 12,
+            "height": 6,
+            "properties": {
+                "metrics": [
+                    [ { "expression": "SERVICE_QUOTA(m1)", "label": "Service Limit Quota", "id": "e1", "region": "us-east-1" } ],
+                    [ "AWS/Usage", "ResourceCount", "Type", "Resource", "Resource", "AccountProvisionedWriteCapacityUnits", "Service", "DynamoDB", "Class", "None", { "id": "m1" } ]
+                ],
+                "view": "timeSeries",
+                "stacked": false,
+                "region": "us-east-1",
+                "stat": "Sum",
+                "period": 60,
+                "yAxis": {
+                    "left": {
+                        "label": "API Calls",
+                        "showUnits": false
+                    }
+                },
+                "title": "AcountProvisionedWriteCapacityUnits"
+            }
+        },
+        {
+            "type": "metric",
+            "x": 0,
+            "y": 4,
+            "width": 12,
+            "height": 6,
+            "properties": {
+                "metrics": [
+                    [ { "expression": "SERVICE_QUOTA(m1)", "label": "Service Limit Quota", "id": "e1" } ],
+                    [ "AWS/Usage", "ResourceCount", "Type", "Resource", "Resource", "AccountProvisionedReadCapacityUnits", "Service", "DynamoDB", "Class", "None", { "id": "m1" } ]
+                ],
+                "view": "timeSeries",
+                "stacked": false,
+                "region": "us-east-1",
+                "stat": "Sum",
+                "period": 60,
+                "yAxis": {
+                    "left": {
+                        "label": "API Calls",
+                        "showUnits": false
+                    }
+                },
+                "title": "AcountProvisionedReadCapacityUnits"
+            }
+        },
+        {
+            "type": "text",
+            "x": 0,
+            "y": 0,
+            "width": 24,
+            "height": 3,
+            "properties": {
+                "markdown": "\n# Usage Metrics vs. Quota\n## CloudWatch\nCloudWatch collects metrics that track the usage of some AWS resources. These metrics correspond to AWS service quotas.  Tracking these metrics can help you proactively manage your quotas.\n\n[button:CloudWatch](#dashboards:name=AWS-Usage-Metrics-CloudWatch) [button:DynamoDB](#dashboards:name=AWS-Usage-Metrics-DynamoDB) [button:EC2](#dashboards:name=AWS-Usage-Metrics-EC2)\n"
+            }
+        },
+        {
+            "type": "text",
+            "x": 0,
+            "y": 3,
+            "width": 24,
+            "height": 1,
+            "properties": {
+                "markdown": "\n## **DynamoDB Dashboard Usage Metrics**\n"
+            }
+        }
+    ]
+}

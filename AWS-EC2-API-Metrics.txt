@@ -1,0 +1,194 @@
+{
+    "widgets": [
+        {
+            "type": "metric",
+            "x": 0,
+            "y": 4,
+            "width": 6,
+            "height": 6,
+            "properties": {
+                "metrics": [
+                    [ "AWS/EC2/API", "RequestLimitExceeded", { "id": "m1" } ]
+                ],
+                "view": "timeSeries",
+                "stacked": false,
+                "region": "us-east-1",
+                "stat": "Sum",
+                "period": 60,
+                "title": "All EC2 API Actions RequestLimitExceeded",
+                "yAxis": {
+                    "left": {
+                        "label": "API Calls",
+                        "showUnits": false,
+                        "min": 0
+                    }
+                }
+            }
+        },
+        {
+            "type": "text",
+            "x": 0,
+            "y": 0,
+            "width": 24,
+            "height": 3,
+            "properties": {
+                "markdown": "\n# AWS-EC2-API-Metrics\n"
+            }
+        },
+        {
+            "type": "text",
+            "x": 0,
+            "y": 10,
+            "width": 24,
+            "height": 1,
+            "properties": {
+                "markdown": "\n## **DescribeInstances**\n"
+            }
+        },
+        {
+            "type": "text",
+            "x": 0,
+            "y": 3,
+            "width": 24,
+            "height": 1,
+            "properties": {
+                "markdown": "\n## **All EC2 API Actions**\n"
+            }
+        },
+        {
+            "type": "metric",
+            "x": 6,
+            "y": 11,
+            "width": 6,
+            "height": 6,
+            "properties": {
+                "metrics": [
+                    [ { "expression": "100*(m1/(m1+m2+m3+m4))", "label": "% API Calls Throttled", "id": "e1", "region": "us-east-1", "yAxis": "left" } ],
+                    [ "AWS/EC2/API", "RequestLimitExceeded", "Action", "DescribeInstances", { "id": "m1", "visible": false } ],
+                    [ ".", "SuccessfulCalls", ".", ".", { "id": "m2", "visible": false } ],
+                    [ ".", "ClientErrors", ".", ".", { "id": "m3", "visible": false } ],
+                    [ ".", "ServerErrors", ".", ".", { "id": "m4", "visible": false } ]
+                ],
+                "view": "timeSeries",
+                "stacked": false,
+                "region": "us-east-1",
+                "stat": "Sum",
+                "period": 60,
+                "title": "Describe Instances % API Calls Throttled",
+                "yAxis": {
+                    "left": {
+                        "label": "",
+                        "showUnits": false,
+                        "min": 0,
+                        "max": 100
+                    }
+                }
+            }
+        },
+        {
+            "type": "metric",
+            "x": 12,
+            "y": 11,
+            "width": 6,
+            "height": 6,
+            "properties": {
+                "metrics": [
+                    [ "AWS/EC2/API", "SuccessfulCalls", "Action", "DescribeInstances", { "id": "m1" } ]
+                ],
+                "view": "timeSeries",
+                "stacked": false,
+                "region": "us-east-1",
+                "stat": "Sum",
+                "period": 60,
+                "title": "Describe Instances SuccessfulCalls",
+                "yAxis": {
+                    "left": {
+                        "label": "API Calls",
+                        "showUnits": false,
+                        "min": 0
+                    }
+                }
+            }
+        },
+        {
+            "type": "metric",
+            "x": 0,
+            "y": 11,
+            "width": 6,
+            "height": 6,
+            "properties": {
+                "metrics": [
+                    [ "AWS/EC2/API", "RequestLimitExceeded", "Action", "DescribeInstances", { "id": "m1" } ]
+                ],
+                "view": "timeSeries",
+                "stacked": false,
+                "region": "us-east-1",
+                "stat": "Sum",
+                "period": 60,
+                "title": "Describe Instances RequestLimitExceeded",
+                "yAxis": {
+                    "left": {
+                        "label": "API Calls",
+                        "showUnits": false,
+                        "min": 0
+                    }
+                }
+            }
+        },
+        {
+            "type": "metric",
+            "x": 6,
+            "y": 4,
+            "width": 6,
+            "height": 6,
+            "properties": {
+                "metrics": [
+                    [ { "expression": "100*(m1/(m1+m2+m3+m4))", "label": "% API Calls Throttled", "id": "e1", "region": "us-east-1" } ],
+                    [ "AWS/EC2/API", "ClientErrors", { "id": "m1", "visible": false } ],
+                    [ ".", "RequestLimitExceeded", { "id": "m2", "visible": false } ],
+                    [ ".", "ServerErrors", { "id": "m3", "visible": false } ],
+                    [ ".", "SuccessfulCalls", { "id": "m4", "visible": false } ]
+                ],
+                "view": "timeSeries",
+                "stacked": false,
+                "region": "us-east-1",
+                "stat": "Sum",
+                "period": 60,
+                "title": "All EC2 API Actions % API Calls Throttled",
+                "yAxis": {
+                    "left": {
+                        "label": "% API Calls Throttled",
+                        "min": 0,
+                        "max": 100,
+                        "showUnits": false
+                    }
+                }
+            }
+        },
+        {
+            "type": "metric",
+            "x": 12,
+            "y": 4,
+            "width": 6,
+            "height": 6,
+            "properties": {
+                "metrics": [
+                    [ "AWS/EC2/API", "SuccessfulCalls" ]
+                ],
+                "view": "timeSeries",
+                "stacked": false,
+                "region": "us-east-1",
+                "stat": "Sum",
+                "period": 60,
+                "yAxis": {
+                    "left": {
+                        "label": "API Calls",
+                        "showUnits": false,
+                        "min": 0
+                    }
+                },
+                "title": "All EC2 API Actions SuccessfulCalls"
+            }
+        }
+    ]
+}
