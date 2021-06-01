@@ -1,8 +1,8 @@
-## AWS-SSO-SYNC
+## aws-cloudwatch-usage-metric-dashboard-examples
 
 ## Overview
 Example CloudWatch dashboards for monitoring and managing API usage in AWS.
- - This repo is based on the steps outlined in this [article](https://aws.amazon.com/blogs/<mgmt>/<managing-and-monitoring-api-throttling-in-your-workloads>/) updated mmm yyyy.
+ - This repo is based on the steps outlined in this [article](https://aws.amazon.com/blogs/mt/managing-and-monitoring-api-throttling-in-your-workloads/).
 
 ## Getting Started
 
