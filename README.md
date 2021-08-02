@@ -2,7 +2,7 @@
 
 ## Overview
 Example CloudWatch dashboards for monitoring and managing API usage in AWS.
- - This repo is based on the steps outlined in this [article](https://aws.amazon.com/blogs/mt/managing-and-monitoring-api-throttling-in-your-workloads/).
+ - This repo is based on the steps outlined in this [article](https://aws.amazon.com/blogs/mt/managing-monitoring-api-throttling-in-workloads/).
 
 ## Getting Started
 
